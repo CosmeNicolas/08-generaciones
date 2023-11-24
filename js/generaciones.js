@@ -90,9 +90,25 @@ class Persona{
       console.log('No es mayor de edad')
     }
   }
+  mostrarGeneracion() {
+    if (this.#nacimiento >= 1930 && this.#nacimiento <= 1948) {
+      console.log('Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra')
+    } if (this.#nacimiento >= 1949 && this.#nacimiento <= 1968) {
+      console.log('Pertenece a la generación "Baby Boom"')
+
+    } if (this.#nacimiento >= 1969 && this.#nacimiento <= 1980) {
+      console.log('Pertenece a la generacion "X"')
+    } if (this.#nacimiento >= 1981 && this.#nacimiento <= 1993) {
+      console.log('Pertenece a la generacion "Y" millenials')
+    } if (this.#nacimiento >= 1994 && this.#nacimiento <= 2010) {
+      console.log('Pertenece a la Generacion "Z"')
+    }
+  }
 }
 
-const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1933)
+const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1930)
 
 persona1.esMayorDeEdad()
 console.log(persona1.edad)
+
+persona1.mostrarGeneracion()
