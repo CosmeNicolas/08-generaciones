@@ -83,4 +83,16 @@ class Persona{
   set nacimiento(nuevoNacimiento){
     this.#nacimiento = nuevoNacimiento;
   }
+  esMayorDeEdad(){
+    if(this.#edad >= 18){
+      console.log('es mayor de edad')
+    } else {
+      console.log('No es mayor de edad')
+    }
+  }
 }
+
+const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1933)
+
+persona1.esMayorDeEdad()
+console.log(persona1.edad)
