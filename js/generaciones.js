@@ -118,10 +118,11 @@ class Persona{
       `)
       }
 }
-const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1930)
+/* const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1930)
 
 persona1.esMayorDeEdad()
 console.log(persona1.edad)
 
 persona1.mostrarGeneracion()
 persona1.mostrarDatos()
+ */

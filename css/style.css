@@ -1,0 +1,25 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  background-color: #a27a5c;
+  color: #f6f4d6;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+main{
+  flex-grow: 1;
+  background-color: #f6f4d6;
+}
+
+footer{
+  background-color: rgb(96, 71, 52);
+  color: #f6f4d6;
+}
