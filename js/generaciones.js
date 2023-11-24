@@ -104,11 +104,24 @@ class Persona{
       console.log('Pertenece a la Generacion "Z"')
     }
   }
+   mostrarDatos(){
+      document.write(`<h1>Taxonomia de Generacios</h1>
+        <ul>
+        <li>Nombre: ${this.#nombre}</li>
+        <li>Edad: ${this.#edad}</li>
+        <li>Dni: ${this.#DNI}</li>
+        <li>Sexo: ${this.#sexo}</li>
+        <li>Peso: ${this.#peso}</li>
+        <li>Altura ${this.#altura}</li>
+        <li>Año de Naciemiento: ${this.#nacimiento}</li>
+        </ul>
+      `)
+      }
 }
-
 const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1930)
 
 persona1.esMayorDeEdad()
 console.log(persona1.edad)
 
 persona1.mostrarGeneracion()
+persona1.mostrarDatos()
