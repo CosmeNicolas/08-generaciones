@@ -85,23 +85,23 @@ export default class Persona{
   }
   esMayorDeEdad(){
     if(this.#edad >= 18){
-      console.log('es mayor de edad')
+      document.write(`<p><b>Es Mayor de Edad</b></p>`)
     } else {
-      console.log('No es mayor de edad')
+      document.write(`<p><b>Es Menor de edad</b></p>`)
     }
   }
   mostrarGeneracion() {
     if (this.#nacimiento >= 1930 && this.#nacimiento <= 1948) {
-      console.log('Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra')
+      document.write(`<p><b>Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra</b></p>`)
     } if (this.#nacimiento >= 1949 && this.#nacimiento <= 1968) {
-      console.log('Pertenece a la generación "Baby Boom"')
+      document.write(`<p<b>Pertenece a la generación "Baby Boom"</b></p>`)
 
     } if (this.#nacimiento >= 1969 && this.#nacimiento <= 1980) {
-      console.log('Pertenece a la generacion "X"')
+      document.write(`<p><b>Pertenece a la generacion "X"</b></p>`)
     } if (this.#nacimiento >= 1981 && this.#nacimiento <= 1993) {
-      console.log('Pertenece a la generacion "Y" millenials')
+      document.write(`<p><b>Pertenece a la generacion "Y" millenials</b></p>`)
     } if (this.#nacimiento >= 1994 && this.#nacimiento <= 2010) {
-      console.log('Pertenece a la Generacion "Z"')
+      document.write(`<p><b>Pertenece a la Generacion "Z"</b></p>`)
     }
   }
    mostrarDatos(){
