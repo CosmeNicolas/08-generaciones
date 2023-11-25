@@ -12,7 +12,7 @@ Luego crea la interfaz necesaria para que el usuario pueda crear un objeto perso
 
 
 //-----///
-
+import Persona from "./classPersona.js";
 
 
 //ingresar modal desde js
@@ -42,7 +42,15 @@ const crearGeneracion = (e) => {
 
   const nuevaGeneracion = new Persona(nombre.value, edad.value, dni.value, sexo.value, peso.value, altura.value, nacimiento.value)
   console.log(nuevaGeneracion)
-  //resetar formulario
+  //resetar 
+
+   nuevaGeneracion.mostrarDatos();
+   nuevaGeneracion.esMayorDeEdad();
+   nuevaGeneracion.mostrarGeneracion();
+
+  
+
+
   formularioGeneraciones.reset();
 }
 
