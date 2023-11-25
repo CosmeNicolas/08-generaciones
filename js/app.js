@@ -14,30 +14,31 @@ import Persona from "./classPersona.js";
 //traemos el modal
 const modalFormulario = new bootstrap.Modal(document.getElementById('formGeneracion'));
 //2- traemos el boton 
- const btnGeneraciones = document.getElementById('verGeneraciones');
- //3-traemos el formulario
- const formularioGeneraciones = document.querySelector('form')
- //4- traemos los datos del formulario
- const nombre = document.getElementById('nombre'),
-   edad = document.getElementById('edad'),
-   dni = document.getElementById('dni'),
-   sexo = document.getElementById('sexo'),
-   peso = document.getElementById('peso'),
-   altura = document.getElementById('altura'),
-   nacimiento = document.getElementById('nacimiento')
+const btnGeneraciones = document.getElementById('verGeneraciones');
+//3-traemos el formulario
+const formularioGeneraciones = document.querySelector('form')
+//4- traemos los datos del formulario
+const nombre = document.getElementById('nombre'),
+  edad = document.getElementById('edad'),
+  dni = document.getElementById('dni'),
+  sexo = document.getElementById('sexo'),
+  peso = document.getElementById('peso'),
+  altura = document.getElementById('altura'),
+  nacimiento = document.getElementById('nacimiento')
 
 //5- agreagmos la funcion del modal
-const mostralModal = ()=>{
+const mostralModal = () => {
   modalFormulario.show()
-}   
+}
 
 //creamos el contacto
-const crearGeneracion = (e)=>{
+const crearGeneracion = (e) => {
   e.preventDefault();
 
-  const nuevaGeneracion = new Persona(nombre.value,  edad.value, dni.value, sexo.value, peso.value, altura.value, nacimiento.value)
+  const nuevaGeneracion = new Persona(nombre.value, edad.value, dni.value, sexo.value, peso.value, altura.value, nacimiento.value)
   console.log(nuevaGeneracion)
-  
+  //resetar formulario
+  formularioGeneraciones.reset();
 }
 
 
