@@ -19,6 +19,11 @@ main{
   background-color: #f6f4d6;
 }
 
+.btn-color{
+  background-color: #a27a5c;
+  border-color: #5a4738;
+}
+
 footer{
   background-color: rgb(96, 71, 52);
   color: #f6f4d6;
