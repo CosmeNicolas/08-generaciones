@@ -44,13 +44,11 @@ const crearGeneracion = (e) => {
   console.log(nuevaGeneracion)
   //resetar 
 
-   nuevaGeneracion.mostrarDatos();
-   nuevaGeneracion.esMayorDeEdad();
-   nuevaGeneracion.mostrarGeneracion();
-
   
-
-
+  nuevaGeneracion.mostrarDatos();
+  nuevaGeneracion.esMayorDeEdad();
+  nuevaGeneracion.mostrarGeneracion();
+  
   formularioGeneraciones.reset();
 }
 
