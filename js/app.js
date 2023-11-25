@@ -8,10 +8,7 @@ esMayorDeEdad: indica si es mayor de edad, devuelve un mensaje indicando que la 
 mostrarDatos: devuelve toda la información del objeto.
 Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente.
  */
-
-
-
-import Persona from "./generaciones.js";
+import Persona from "./classPersona.js";
 
 //ingresar modal desde js
 //traemos el modal
@@ -34,13 +31,25 @@ const mostralModal = ()=>{
   modalFormulario.show()
 }   
 
+//creamos el contacto
+const crearGeneracion = (e)=>{
+  e.preventDefault();
+
+  const nuevaGeneracion = new Persona(nombre.value,  edad.value, dni.value, sexo.value, peso.value, altura.value, nacimiento.value)
+  console.log(nuevaGeneracion)
+  
+}
 
 
-/* const persona1 = new Persona("lucas",17,37456108,"H",60,1.70,1930)
+//agregamos evento
+btnGeneraciones.addEventListener('click', mostralModal);
+formularioGeneraciones.addEventListener('submit', crearGeneracion)
 
-persona1.esMayorDeEdad()
-console.log(persona1.edad)
 
-persona1.mostrarGeneracion()
-persona1.mostrarDatos()
-*/
+
+
+
+
+
+
+

@@ -78,10 +78,10 @@
               <input type="number" 
               value=""
               min="0"
-              max="9999999"
+              max="99999999"
               id="dni"
               class="form-control"
-              placeholder="Ej: 9999999">
+              placeholder="Ej: 99999999">
             </div>
             <div class="mb-3">
               <label for="telefono" class="form-label">Sexo</label>
@@ -91,27 +91,36 @@
              </select>
             </div>
             <div class="mb-3">
-              <label for="dni" class="form-label">Peso</label>
+              <label for="peso" class="form-label">Peso</label>
               <input type="number" 
               value=""
-              min="0"
-              max="200"
-              id="dni"
+              step="0.01"
+              min="0" 
+              max="200" 
+              id="peso"
               class="form-control"
               placeholder="Ej: 65.3">
             </div>
             <div class="mb-3">
-              <label for="dni" class="form-label">Altura</label>
-              <input type="number" 
+              <label for="altura" class="form-label">Altura</label>
+              <input type="number"
+              id="altura" 
               value="" 
               min="0" 
-              max="200" id="dni" 
+              max="2.99" 
+              step="0.01"
               class="form-control" 
               placeholder="Ej: 1.70">
             </div>
             <div class="mb-3">
-              <label for="Nacimiento" class="form-label">Nacimiento</label>
-              <input type="date" id="Nacimiento" class="form-control" placeholder="Ej: Juan perez">
+              <label for="nacimiento" class="form-label">Nacimiento</label>
+              <input type="number"
+               id="nacimiento" 
+               step="1"
+               min="1900"
+               max="2020"
+               class="form-control"
+               placeholder="Ej: 1945">
             </div>
             <button class="btn-color btn btn-primary" type="submit">Consultar</button>
           </form>
@@ -127,6 +136,6 @@
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>
