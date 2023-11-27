@@ -58,3 +58,4 @@ const crearGeneracion = (e) => {
 //agregamos evento
 btnGeneraciones.addEventListener('click', mostralModal);
 formularioGeneraciones.addEventListener('submit', crearGeneracion)
+
