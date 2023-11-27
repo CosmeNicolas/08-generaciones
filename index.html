@@ -36,13 +36,14 @@
     <section class="text-center">
       <button class="btn-color btn btn-dark text-center py-1 mb-3"  id="verGeneraciones" >Ver Generaciones</button>
     </section>
+      <section class="container-fluid border border-2 border-secondary" id="generaciones">
+    
+      </section>
   </main>
 <!-- 
   MODAL
  -->
-  <!-- Modal -->
-  <div class="modal fade" id="formGeneracion" tabindex="-1" aria-labelledby="administrarContactoLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="formGeneracion" tabindex="-1" aria-labelledby="administrarContactoLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -53,87 +54,54 @@
           <form>
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
-              <input 
-              type="text" 
-              id="nombre" 
-              class="form-control" 
-              placeholder="Ej: Bob Esponja"
-              maxlength="30"
-              minlength="2"
-              required>
+              <input type="text" id="nombre" class="form-control" placeholder="Ej: Bob Esponja" maxlength="30"
+                minlength="2" required>
             </div>
             <div class="mb-3">
-             <label for="edad" class="form-label">edad</label>
-              <input type="number" 
-              value=""
-              min="0"
-              max="120"
-              id="edad" 
-              class="form-control" 
-              placeholder="Ej: 10"
-              required>
+              <label for="edad" class="form-label">edad</label>
+              <input type="number" value="" min="0" max="120" id="edad" class="form-control" placeholder="Ej: 25"
+                required>
             </div>
             <div class="mb-3">
               <label for="dni" class="form-label">DNI</label>
-              <input type="number" 
-              value=""
-              min="0"
-              max="99999999"
-              id="dni"
-              class="form-control"
-              placeholder="Ej: 99999999"
-              required>
+              <input type="number" value="" min="0" max="99999999" id="dni" class="form-control"
+                placeholder="Ej: 99999999" required>
             </div>
             <div class="mb-3">
               <label for="telefono" class="form-label">Sexo</label>
-             <select name="sexo" id="sexo">
-              <option value="hombre">H</option>
-              <option value="mujer">M</option>
-             </select>
+              <select name="sexo" id="sexo">
+                <option value="hombre">H</option>
+                <option value="mujer">M</option>
+              </select>
             </div>
             <div class="mb-3">
               <label for="peso" class="form-label">Peso</label>
-              <input type="number" 
-              value=""
-              step="0.01"
-              min="0" 
-              max="200" 
-              id="peso"
-              class="form-control"
-              placeholder="Ej: 65.3"
-              required>
+              <input type="number" value="" step="0.01" min="0" max="200" id="peso" class="form-control"
+                placeholder="Ej: 65.3" required>
             </div>
             <div class="mb-3">
               <label for="altura" class="form-label">Altura</label>
-              <input type="number"
-              id="altura" 
-              value="" 
-              min="0" 
-              max="2.99" 
-              step="0.01"
-              class="form-control" 
-              placeholder="Ej: 1.70"
-              required>
+              <input type="number" id="altura" value="" min="0" max="2.99" step="0.01" class="form-control"
+                placeholder="Ej: 1.70" required>
             </div>
             <div class="mb-3">
               <label for="nacimiento" class="form-label">Nacimiento</label>
-              <input type="number"
-               id="nacimiento" 
-               step="1"
-               min="1900"
-               max="2020"
-               class="form-control"
-               placeholder="Ej: 1945"
-               required>
+              <input type="number" id="nacimiento" step="1" min="1900" max="2020" class="form-control"
+                placeholder="Ej: 1945" required>
             </div>
-            <button class="btn-color btn btn-primary" type="submit" >Consultar</button>
+            <button class="btn-color btn btn-primary" type="submit">Consultar</button>
           </form>
         </div>
       </div>
     </div>
   </div>
+  <!-- Modal -->
+ 
 
-<!-- MODAL END -->
+
+  
+
+
   <footer class="container-fluid py-3 text-center">
     <p>&copy; Todos los derechos reservados </p> 
   </footer>

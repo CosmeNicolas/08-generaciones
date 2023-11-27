@@ -43,20 +43,20 @@ const crearGeneracion = (e) => {
   const nuevaGeneracion = new Persona(nombre.value, edad.value, dni.value, sexo.value, peso.value, altura.value, nacimiento.value)
   console.log(nuevaGeneracion)
   //resetar 
-
    nuevaGeneracion.mostrarDatos();
    nuevaGeneracion.esMayorDeEdad();
    nuevaGeneracion.mostrarGeneracion();
+   formularioGeneraciones.reset();
 
+
+  }
+
+
+  //agregamos evento
+  btnGeneraciones.addEventListener('click', mostralModal);
+  formularioGeneraciones.addEventListener('submit', crearGeneracion)
   
-
-
-  formularioGeneraciones.reset();
-}
-
-
-
-
-//agregamos evento
-btnGeneraciones.addEventListener('click', mostralModal);
-formularioGeneraciones.addEventListener('submit', crearGeneracion)
+  
+ 
+  
+  
