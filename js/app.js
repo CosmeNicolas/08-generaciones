@@ -54,6 +54,11 @@ const crearGeneracion = (e) => {
   tipoGeneraciones.push(nuevaGeneracion)
 }
 
+const mostrarTipoGenraciones = (genración, fila)=>{
+  
+
+}
+
 
 //agregamos evento
 btnGeneraciones.addEventListener('click', mostralModal);
