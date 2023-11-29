@@ -30,6 +30,9 @@ const nombre = document.getElementById('nombre'),
   peso = document.getElementById('peso'),
   altura = document.getElementById('altura'),
   nacimiento = document.getElementById('nacimiento')
+const tipoGeneraciones = [];
+console.log(tipoGeneraciones)
+
 
 //5- agreagmos la funcion del modal
 const mostralModal = () => {
@@ -47,6 +50,8 @@ const crearGeneracion = (e) => {
   nuevaGeneracion.esMayorDeEdad();
   nuevaGeneracion.mostrarGeneracion();
   formularioGeneraciones.reset();
+
+  tipoGeneraciones.push(nuevaGeneracion)
 }
 
 
