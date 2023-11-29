@@ -85,32 +85,33 @@ export default class Persona{
   }
   esMayorDeEdad(){
     if(this.#edad >= 18){
-      //document.write(`<p><b>Es Mayor de Edad</b></p>`)
+      document.write(`<p><b>Es Mayor de Edad</b></p>`)
     } else {
-      //document.write(`<p><b>Es Menor de edad</b></p>`)
+      document.write(`<p><b>Es Menor de edad</b></p>`)
     }
   }
   mostrarGeneracion() {
     if (this.#nacimiento >= 1930 && this.#nacimiento <= 1948) {
-      //document.write(`<p><b>Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra</b></p>`)
-      console.log('Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra')
+      document.write(`<p><b>Pertenece a la generacion "Silent Generación" llamada los niños de la posguerra</b></p>`)
+     
     } if (this.#nacimiento >= 1949 && this.#nacimiento <= 1968) {
-      //document.write(`<p<b>Pertenece a la generación "Baby Boom"</b></p>`)
+      document.write(`<p<b>Pertenece a la generación "Baby Boom"</b></p>`)
       console.log('Pertenece a la generación "Baby Boom"')
     } if (this.#nacimiento >= 1969 && this.#nacimiento <= 1980) {
-      //document.write(`<p><b>Pertenece a la generacion "X"</b></p>`)
+      document.write(`<p><b>Pertenece a la generacion "X"</b></p>`)
       console.log('Pertenece a la generacion X')
     } if (this.#nacimiento >= 1981 && this.#nacimiento <= 1993) {
-      //document.write(`<p><b>Pertenece a la generacion "Y" millenials</b></p>`)
-      console.log('Pertenece a la generación "Y" millenials')
+      document.write(`<p><b>Pertenece a la generacion "Y" millenials</b></p>`)
+   
     } if (this.#nacimiento >= 1994 && this.#nacimiento <= 2010) {
-      //document.write(`<p><b>Pertenece a la Generacion "Z"</b></p>`)
-      console.log('Pertenece a la genración "Z"')
+      document.write(`<p><b>Pertenece a la Generacion "Z"</b></p>`)
+      
     }
   }
    mostrarDatos(){
-      //document.write(`<h1>Taxonomia de Generacios</h1>
-      console.log(`
+      document.write(` 
+      <section class="container-fluid text-center">
+      <h1 class="titulo-generaciones text-center">Taxonomia de Generacios</h1>
         <ul>
         <li>Nombre: ${this.#nombre}</li>
         <li>Edad: ${this.#edad}</li>
@@ -120,6 +121,7 @@ export default class Persona{
         <li>Altura ${this.#altura}</li>
         <li>Año de Naciemiento: ${this.#nacimiento}</li>
         </ul>
-      `)
+      </section>
+        `)
       }
 }
