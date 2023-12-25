@@ -121,6 +121,7 @@ export default class Persona{
         <li>Altura ${this.#altura}</li>
         <li>Año de Naciemiento: ${this.#nacimiento}</li>
         </ul>
+        <a class="btn btn-primary" src="../index.html"> volver</a>
       </section>
         `)
       }
