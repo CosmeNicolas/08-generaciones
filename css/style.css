@@ -19,6 +19,17 @@ main{
   background-color: #f6f4d6;
 }
 
+
+.titulo-generaciones{
+  font-family: 'Monomaniac one' , sans-serif ;
+  color: #5a4738;
+}
+
+p{
+  color: #a27a5c;
+  font-family: 'Monomaniac one', sans-serif;
+}
+
 .btn-color{
   background-color: #a27a5c;
   border-color: #5a4738;
